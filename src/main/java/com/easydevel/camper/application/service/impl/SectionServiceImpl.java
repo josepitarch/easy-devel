@@ -32,6 +32,7 @@ public class SectionServiceImpl implements SectionService {
     }
 
     @Override
+    @Cacheable(value = "section-cache", key = "'section-' + #id", unless = "#result == null || #result.id == null || #result.id == ''")
     public SectionDto findById(Long id) {
         final Section section = repository
                 .findById(id)
