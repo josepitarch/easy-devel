@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet.context-path: /api
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-twilight-heart-42755241.eu-central-1.aws.neon.fl0.io:5432/camper
+    username: fl0user
+    password: 6WwBZdOYl3sn
+    driver-class-name: org.postgresql.Driver
+  data:
+    redis:
+      host: redis-18633.c267.us-east-1-4.ec2.cloud.redislabs.com
+      port: 18633
+      username: default
+      password: jAIMopH5TrjuUsAkm6lRB2R20YEAWcRG
+  profiles:
+    active: dev
