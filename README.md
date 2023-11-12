@@ -29,6 +29,7 @@ jopimi@easydevel:~$ mvn spring-boot:run -Dspring-boot.run.profiles=dev
 ```
 
 ### Notas
+* En la raíz del proyecto se encuentra el fichero `postman_collection.json` con la colección de Postman para probar el API.
 * Para el entorno de desarrollo se ha optado por dockerizar tanto la base de datos PostgreSQL como la de Redis.
 * Para el entorno de producción se ha optado por externalizar la base de datos PostgreSQL y Redis en los siguientes proveedores:
     * PostgreSQL: `https://www.fl0.com/`
