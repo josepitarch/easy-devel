@@ -1,6 +1,5 @@
 package com.easydevel.camper.infrastructure.exception.handler;
 
-import com.easydevel.camper.domain.exception.exception.BusinessException;
 import com.easydevel.camper.domain.exception.exception.NotFoundSectionException;
 import com.easydevel.camper.domain.exception.exception.UniqueSectionException;
 import org.springframework.http.HttpStatus;
@@ -16,7 +15,7 @@ import java.util.Objects;
 
 @ControllerAdvice
 public class ControllerHandlerException {
-    @ExceptionHandler({ UniqueSectionException.class, BusinessException.class })
+    @ExceptionHandler(UniqueSectionException.class)
     public ResponseEntity<Map<String, String>> handleBadRequest(Exception ex) {
         return ResponseEntity
                 .badRequest()
