@@ -20,7 +20,7 @@ jopimi@easydevel:~$ mvn clean install
 ```console
 jopimi@easydevel:~$ mvn spring-boot:run
 ```
-3. Para levantar el proyecto con el entorno de desarrollo ejecuta el siguiente comando en la raíz del proyecto:
+3. Para levantar el proyecto con el entorno de desarrollo ejecuta los siguientes comandos en la raíz del proyecto:
 ```console
 jopimi@easydevel:~$ docker-compose up
 ```
@@ -33,3 +33,6 @@ jopimi@easydevel:~$ mvn spring-boot:run -Dspring-boot.run.profiles=dev
 * Para el entorno de producción se ha optado por externalizar la base de datos PostgreSQL y Redis en los siguientes proveedores:
     * PostgreSQL: `https://www.fl0.com/`
     * Redis: `https://redis.io/`
+
+---
+Desarrollado por [Jose Luis Pitarch Miravete](https://www.linkedin.com/in/jopimi/)
